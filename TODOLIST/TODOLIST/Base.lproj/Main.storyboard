@@ -292,7 +292,6 @@
                                 </state>
                                 <connections>
                                     <action selector="addButton:" destination="nqO-uk-WH9" eventType="touchUpInside" id="9dO-ot-dVU"/>
-                                    <segue destination="brV-6X-wH4" kind="showDetail" animates="NO" id="l7k-r7-hkN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4j-Wi-abC">
@@ -303,9 +302,6 @@
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="brV-6X-wH4" kind="showDetail" animates="NO" id="ue2-Xg-xQL"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
@@ -519,6 +515,6 @@
         <image name="timer" width="27" height="27"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ue2-Xg-xQL"/>
+        <segue reference="X50-YZ-36c"/>
     </inferredMetricsTieBreakers>
 </document>

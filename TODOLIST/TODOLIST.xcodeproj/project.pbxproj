@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA0B7002228B1BAC00BF3701 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0B7000228B1BAC00BF3701 /* SWRevealViewController.m */; };
 		FA69061B22858D3C00FBBB09 /* CountdownerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69061A22858D3C00FBBB09 /* CountdownerViewController.swift */; };
 		FA69061D22858D4500FBBB09 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69061C22858D4500FBBB09 /* TimerViewController.swift */; };
 		FA69061F22858DB900FBBB09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69061E22858DB900FBBB09 /* ViewController.swift */; };
 		FA90C4F722859B3A00922647 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90C4F622859B3A00922647 /* ContainerViewController.swift */; };
 		FA90C4F922859DA600922647 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90C4F822859DA600922647 /* SideMenuTableViewController.swift */; };
-		FA90C4FE2285B86200922647 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA90C4FD2285B86200922647 /* SWRevealViewController.m */; };
 		FA90C5002285C53A00922647 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA90C4FF2285C53A00922647 /* Assets.xcassets */; };
 		FABA66AE22722D0900BF9230 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA66AD22722D0900BF9230 /* AppDelegate.swift */; };
 		FABA66B322722D0900BF9230 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABA66B122722D0900BF9230 /* Main.storyboard */; };
@@ -23,14 +23,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA0B7000228B1BAC00BF3701 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		FA0B7001228B1BAC00BF3701 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		FA69061A22858D3C00FBBB09 /* CountdownerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownerViewController.swift; sourceTree = "<group>"; };
 		FA69061C22858D4500FBBB09 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		FA69061E22858DB900FBBB09 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA90C4F622859B3A00922647 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		FA90C4F822859DA600922647 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
 		FA90C4FB2285B86100922647 /* TODOLIST-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TODOLIST-Bridging-Header.h"; sourceTree = "<group>"; };
-		FA90C4FC2285B86200922647 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		FA90C4FD2285B86200922647 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		FA90C4FF2285C53A00922647 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FABA66AA22722D0900BF9230 /* TODOLIST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TODOLIST.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABA66AD22722D0900BF9230 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,11 +53,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA0B6FFC228B1AD700BF3701 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		FA90C4FA2285B81F00922647 /* SWRevealViewController */ = {
 			isa = PBXGroup;
 			children = (
-				FA90C4FC2285B86200922647 /* SWRevealViewController.h */,
-				FA90C4FD2285B86200922647 /* SWRevealViewController.m */,
+				FA0B7001228B1BAC00BF3701 /* SWRevealViewController.h */,
+				FA0B7000228B1BAC00BF3701 /* SWRevealViewController.m */,
 				FA90C4FB2285B86100922647 /* TODOLIST-Bridging-Header.h */,
 			);
 			path = SWRevealViewController;
@@ -82,6 +89,7 @@
 		FABA66AC22722D0900BF9230 /* TODOLIST */ = {
 			isa = PBXGroup;
 			children = (
+				FA0B6FFC228B1AD700BF3701 /* New Group */,
 				FA90C4FA2285B81F00922647 /* SWRevealViewController */,
 				FABA66AD22722D0900BF9230 /* AppDelegate.swift */,
 				FABA66BF22722D4F00BF9230 /* TableViewController.swift */,
@@ -179,7 +187,7 @@
 				FA90C4F922859DA600922647 /* SideMenuTableViewController.swift in Sources */,
 				FA69061F22858DB900FBBB09 /* ViewController.swift in Sources */,
 				FABA66AE22722D0900BF9230 /* AppDelegate.swift in Sources */,
-				FA90C4FE2285B86200922647 /* SWRevealViewController.m in Sources */,
+				FA0B7002228B1BAC00BF3701 /* SWRevealViewController.m in Sources */,
 				FABA66C022722D4F00BF9230 /* TableViewController.swift in Sources */,
 				FA90C4F722859B3A00922647 /* ContainerViewController.swift in Sources */,
 			);
