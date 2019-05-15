@@ -8,12 +8,12 @@
 
 import UIKit
 
-class TableViewController: UITableViewController{
+class TasksTableViewController: UITableViewController{
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
-    var itemTitle1 = ""
-    var itemSubtitle1 = ""
+    var currentTitle = ""
+    var currentSubtitle = ""
     
     let searchController = UISearchController(searchResultsController: nil)
     
@@ -27,6 +27,7 @@ class TableViewController: UITableViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadData()
         // Setup the Search Controller
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
@@ -42,13 +43,19 @@ class TableViewController: UITableViewController{
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
-        
-        
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        loadData()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(true)
+        saveData()
+    }
     
     //MARK: SERCH BAR
-    
     // MARK: - Private instance methods
     
     func searchBarIsEmpty() -> Bool {
@@ -98,8 +105,8 @@ class TableViewController: UITableViewController{
         
         let currentItem = task
 
-        itemTitle1 = currentItem.name
-        itemSubtitle1 = currentItem.description
+        currentTitle = currentItem.name
+        currentSubtitle = currentItem.description
         performSegue(withIdentifier: "detailSegue", sender: self)
     }
     
@@ -168,7 +175,6 @@ class TableViewController: UITableViewController{
         } else {
             tableView.cellForRow(at: indexPath)?.imageView?.image = UIImage(named: "uncheck.png")
         }
-       
     }
 
     
@@ -183,13 +189,12 @@ class TableViewController: UITableViewController{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         let DetailTableViewController = segue.destination as! DetailTableViewController
-        DetailTableViewController.subtitleString = itemSubtitle1
-        DetailTableViewController.titleString = itemTitle1
+        DetailTableViewController.subtitleString = currentSubtitle
+        DetailTableViewController.titleString = currentTitle
     }
-  
 }
 
-extension TableViewController: UISearchResultsUpdating {
+extension TasksTableViewController: UISearchResultsUpdating {
     // MARK: - UISearchResultsUpdating Delegate
     func updateSearchResults(for searchController: UISearchController) {
         filterContentForSearchText(searchController.searchBar.text!)

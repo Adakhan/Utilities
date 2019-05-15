@@ -20,7 +20,6 @@ class CountdownerViewController: UIViewController {
     @IBOutlet weak var startOutlet: UIButton!
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         pauseOutlet.isEnabled = false

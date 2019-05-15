@@ -18,7 +18,4 @@ class SideMenuTableViewController: UITableViewController {
         default: break
         }
     }
-    
-    
-
 }

@@ -39,7 +39,6 @@ class TimerViewController: UIViewController {
     
     //Actions
     @IBAction func startButton(_ sender: UIButton) {
-    
         runTimer()
         pauseLabel.isEnabled = true
         resetLabel.isEnabled = true
@@ -47,7 +46,6 @@ class TimerViewController: UIViewController {
     }
     
     @IBAction func pauseButton(_ sender: UIButton) {
-        
         stop()
     }
     
@@ -60,9 +58,7 @@ class TimerViewController: UIViewController {
     
     
     //functions
-    
     func runTimer() {
-        
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(TimerViewController.action), userInfo: nil, repeats: true)
     }
     
@@ -74,7 +70,6 @@ class TimerViewController: UIViewController {
     
     
     @objc func action() {
-        
         time += 1
         timeScreen.text = timeString(time: TimeInterval(time))
     }
@@ -85,6 +80,5 @@ class TimerViewController: UIViewController {
         let seconds = Int(time) % 60
         return String(format:"%02i:%02i:%02i", hours, minutes, seconds)
     }
-    
 }
 

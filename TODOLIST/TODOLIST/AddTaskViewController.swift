@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class AddTaskViewController: UIViewController {
     
     @IBOutlet weak var titleOutlet: UILabel!
     @IBOutlet weak var nameTextField: UITextField!
@@ -22,13 +22,6 @@ class ViewController: UIViewController {
         if newName != "" {
             addItem(nameItem: newName!, descriptionItem: newDesc!)
         }
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        nameTextField.becomeFirstResponder()
+        saveData()
     }
 }

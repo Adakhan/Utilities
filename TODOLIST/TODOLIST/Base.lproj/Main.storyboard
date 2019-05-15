@@ -13,7 +13,7 @@
         <!--ToDoList Search-->
         <scene sceneID="tPE-EN-O67">
             <objects>
-                <tableViewController id="0RE-Ga-uIr" customClass="TableViewController" customModule="TODOLIST" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="0RE-Ga-uIr" customClass="TasksTableViewController" customModule="TODOLIST" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bt1-9m-ePA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -251,10 +251,10 @@
             </objects>
             <point key="canvasLocation" x="-1161" y="361"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Task View Controller-->
         <scene sceneID="BjR-EX-zHa">
             <objects>
-                <viewController id="nqO-uk-WH9" customClass="ViewController" customModule="TODOLIST" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nqO-uk-WH9" customClass="AddTaskViewController" customModule="TODOLIST" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yfX-tl-veY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -292,6 +292,7 @@
                                 </state>
                                 <connections>
                                     <action selector="addButton:" destination="nqO-uk-WH9" eventType="touchUpInside" id="9dO-ot-dVU"/>
+                                    <segue destination="Tuy-eU-sGD" kind="show" animates="NO" id="v0b-lT-gnI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4j-Wi-abC">
@@ -302,6 +303,9 @@
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Tuy-eU-sGD" kind="show" animates="NO" id="mo5-sd-L6g"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
@@ -516,5 +520,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="X50-YZ-36c"/>
+        <segue reference="v0b-lT-gnI"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -10,14 +10,13 @@
 		FA0B7002228B1BAC00BF3701 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0B7000228B1BAC00BF3701 /* SWRevealViewController.m */; };
 		FA69061B22858D3C00FBBB09 /* CountdownerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69061A22858D3C00FBBB09 /* CountdownerViewController.swift */; };
 		FA69061D22858D4500FBBB09 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69061C22858D4500FBBB09 /* TimerViewController.swift */; };
-		FA69061F22858DB900FBBB09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69061E22858DB900FBBB09 /* ViewController.swift */; };
-		FA90C4F722859B3A00922647 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90C4F622859B3A00922647 /* ContainerViewController.swift */; };
+		FA69061F22858DB900FBBB09 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69061E22858DB900FBBB09 /* AddTaskViewController.swift */; };
 		FA90C4F922859DA600922647 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90C4F822859DA600922647 /* SideMenuTableViewController.swift */; };
 		FA90C5002285C53A00922647 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA90C4FF2285C53A00922647 /* Assets.xcassets */; };
 		FABA66AE22722D0900BF9230 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA66AD22722D0900BF9230 /* AppDelegate.swift */; };
 		FABA66B322722D0900BF9230 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABA66B122722D0900BF9230 /* Main.storyboard */; };
 		FABA66B822722D0C00BF9230 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABA66B622722D0C00BF9230 /* LaunchScreen.storyboard */; };
-		FABA66C022722D4F00BF9230 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA66BF22722D4F00BF9230 /* TableViewController.swift */; };
+		FABA66C022722D4F00BF9230 /* TasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA66BF22722D4F00BF9230 /* TasksTableViewController.swift */; };
 		FABA66C222722E6B00BF9230 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA66C122722E6B00BF9230 /* Model.swift */; };
 		FAEDFFA122749B2C00351FB1 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEDFFA022749B2C00351FB1 /* DetailTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -27,8 +26,7 @@
 		FA0B7001228B1BAC00BF3701 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		FA69061A22858D3C00FBBB09 /* CountdownerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownerViewController.swift; sourceTree = "<group>"; };
 		FA69061C22858D4500FBBB09 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
-		FA69061E22858DB900FBBB09 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FA90C4F622859B3A00922647 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		FA69061E22858DB900FBBB09 /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		FA90C4F822859DA600922647 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
 		FA90C4FB2285B86100922647 /* TODOLIST-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TODOLIST-Bridging-Header.h"; sourceTree = "<group>"; };
 		FA90C4FF2285C53A00922647 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,7 +35,7 @@
 		FABA66B222722D0900BF9230 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FABA66B722722D0C00BF9230 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FABA66B922722D0C00BF9230 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FABA66BF22722D4F00BF9230 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		FABA66BF22722D4F00BF9230 /* TasksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTableViewController.swift; sourceTree = "<group>"; };
 		FABA66C122722E6B00BF9230 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		FAEDFFA022749B2C00351FB1 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,13 +51,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FA0B6FFC228B1AD700BF3701 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		FA90C4FA2285B81F00922647 /* SWRevealViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,21 +80,19 @@
 		FABA66AC22722D0900BF9230 /* TODOLIST */ = {
 			isa = PBXGroup;
 			children = (
-				FA0B6FFC228B1AD700BF3701 /* New Group */,
 				FA90C4FA2285B81F00922647 /* SWRevealViewController */,
 				FABA66AD22722D0900BF9230 /* AppDelegate.swift */,
-				FABA66BF22722D4F00BF9230 /* TableViewController.swift */,
-				FABA66B122722D0900BF9230 /* Main.storyboard */,
+				FABA66BF22722D4F00BF9230 /* TasksTableViewController.swift */,
 				FAEDFFA022749B2C00351FB1 /* DetailTableViewController.swift */,
 				FABA66C122722E6B00BF9230 /* Model.swift */,
-				FA69061E22858DB900FBBB09 /* ViewController.swift */,
+				FA69061E22858DB900FBBB09 /* AddTaskViewController.swift */,
 				FA69061A22858D3C00FBBB09 /* CountdownerViewController.swift */,
 				FA69061C22858D4500FBBB09 /* TimerViewController.swift */,
+				FA90C4F822859DA600922647 /* SideMenuTableViewController.swift */,
+				FABA66B122722D0900BF9230 /* Main.storyboard */,
 				FABA66B622722D0C00BF9230 /* LaunchScreen.storyboard */,
 				FA90C4FF2285C53A00922647 /* Assets.xcassets */,
 				FABA66B922722D0C00BF9230 /* Info.plist */,
-				FA90C4F622859B3A00922647 /* ContainerViewController.swift */,
-				FA90C4F822859DA600922647 /* SideMenuTableViewController.swift */,
 			);
 			path = TODOLIST;
 			sourceTree = "<group>";
@@ -185,11 +174,10 @@
 				FA69061D22858D4500FBBB09 /* TimerViewController.swift in Sources */,
 				FABA66C222722E6B00BF9230 /* Model.swift in Sources */,
 				FA90C4F922859DA600922647 /* SideMenuTableViewController.swift in Sources */,
-				FA69061F22858DB900FBBB09 /* ViewController.swift in Sources */,
+				FA69061F22858DB900FBBB09 /* AddTaskViewController.swift in Sources */,
 				FABA66AE22722D0900BF9230 /* AppDelegate.swift in Sources */,
 				FA0B7002228B1BAC00BF3701 /* SWRevealViewController.m in Sources */,
-				FABA66C022722D4F00BF9230 /* TableViewController.swift in Sources */,
-				FA90C4F722859B3A00922647 /* ContainerViewController.swift in Sources */,
+				FABA66C022722D4F00BF9230 /* TasksTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
