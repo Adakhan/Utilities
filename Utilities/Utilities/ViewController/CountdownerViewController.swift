@@ -14,8 +14,10 @@ class CountdownerViewController: UIViewController {
     //MARK: Outlets
     @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet weak var timeScreen: UILabel!
+    
     @IBOutlet weak var sliderOutlet: UISlider!
     @IBOutlet weak var stopOutlet: UIButton!
+    
     @IBOutlet weak var pauseOutlet: UIButton!
     @IBOutlet weak var startOutlet: UIButton!
     
@@ -64,7 +66,7 @@ class CountdownerViewController: UIViewController {
     }
     
     
-@IBAction func stopButton(_ sender: UIButton)
+    @IBAction func stopButton(_ sender: UIButton)
     {
         stop()
         stopOutlet.isEnabled = false

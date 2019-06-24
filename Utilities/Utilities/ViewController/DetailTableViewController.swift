@@ -16,7 +16,7 @@ class DetailTableViewController: UITableViewController {
     var titleString = String()
     var subtitleString = String()
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -28,9 +28,9 @@
 		FA69061C22858D4500FBBB09 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		FA69061E22858DB900FBBB09 /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		FA90C4F822859DA600922647 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
-		FA90C4FB2285B86100922647 /* TODOLIST-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TODOLIST-Bridging-Header.h"; sourceTree = "<group>"; };
+		FA90C4FB2285B86100922647 /* Utilities-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Utilities-Bridging-Header.h"; sourceTree = "<group>"; };
 		FA90C4FF2285C53A00922647 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FABA66AA22722D0900BF9230 /* TODOLIST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TODOLIST.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FABA66AA22722D0900BF9230 /* Utilities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Utilities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABA66AD22722D0900BF9230 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FABA66B222722D0900BF9230 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FABA66B722722D0C00BF9230 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,44 @@
 			children = (
 				FA0B7001228B1BAC00BF3701 /* SWRevealViewController.h */,
 				FA0B7000228B1BAC00BF3701 /* SWRevealViewController.m */,
-				FA90C4FB2285B86100922647 /* TODOLIST-Bridging-Header.h */,
+				FA90C4FB2285B86100922647 /* Utilities-Bridging-Header.h */,
 			);
 			path = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		FAAAF84E22C0EEB500A8CB15 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FABA66AD22722D0900BF9230 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		FAAAF84F22C0EF2600A8CB15 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FABA66BF22722D4F00BF9230 /* TasksTableViewController.swift */,
+				FAEDFFA022749B2C00351FB1 /* DetailTableViewController.swift */,
+				FA69061E22858DB900FBBB09 /* AddTaskViewController.swift */,
+				FA69061A22858D3C00FBBB09 /* CountdownerViewController.swift */,
+				FA90C4F822859DA600922647 /* SideMenuTableViewController.swift */,
+				FA69061C22858D4500FBBB09 /* TimerViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FAAAF85022C0EF4600A8CB15 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FABA66C122722E6B00BF9230 /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		FABA66A122722D0900BF9230 = {
 			isa = PBXGroup;
 			children = (
-				FABA66AC22722D0900BF9230 /* TODOLIST */,
+				FABA66AC22722D0900BF9230 /* Utilities */,
 				FABA66AB22722D0900BF9230 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,37 +101,32 @@
 		FABA66AB22722D0900BF9230 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FABA66AA22722D0900BF9230 /* TODOLIST.app */,
+				FABA66AA22722D0900BF9230 /* Utilities.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FABA66AC22722D0900BF9230 /* TODOLIST */ = {
+		FABA66AC22722D0900BF9230 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				FAAAF85022C0EF4600A8CB15 /* Model */,
+				FAAAF84F22C0EF2600A8CB15 /* ViewController */,
+				FAAAF84E22C0EEB500A8CB15 /* AppDelegate */,
 				FA90C4FA2285B81F00922647 /* SWRevealViewController */,
-				FABA66AD22722D0900BF9230 /* AppDelegate.swift */,
-				FABA66BF22722D4F00BF9230 /* TasksTableViewController.swift */,
-				FAEDFFA022749B2C00351FB1 /* DetailTableViewController.swift */,
-				FABA66C122722E6B00BF9230 /* Model.swift */,
-				FA69061E22858DB900FBBB09 /* AddTaskViewController.swift */,
-				FA69061A22858D3C00FBBB09 /* CountdownerViewController.swift */,
-				FA69061C22858D4500FBBB09 /* TimerViewController.swift */,
-				FA90C4F822859DA600922647 /* SideMenuTableViewController.swift */,
 				FABA66B122722D0900BF9230 /* Main.storyboard */,
 				FABA66B622722D0C00BF9230 /* LaunchScreen.storyboard */,
 				FA90C4FF2285C53A00922647 /* Assets.xcassets */,
 				FABA66B922722D0C00BF9230 /* Info.plist */,
 			);
-			path = TODOLIST;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FABA66A922722D0900BF9230 /* TODOLIST */ = {
+		FABA66A922722D0900BF9230 /* Utilities */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FABA66BC22722D0C00BF9230 /* Build configuration list for PBXNativeTarget "TODOLIST" */;
+			buildConfigurationList = FABA66BC22722D0C00BF9230 /* Build configuration list for PBXNativeTarget "Utilities" */;
 			buildPhases = (
 				FABA66A622722D0900BF9230 /* Sources */,
 				FABA66A722722D0900BF9230 /* Frameworks */,
@@ -112,9 +136,9 @@
 			);
 			dependencies = (
 			);
-			name = TODOLIST;
+			name = Utilities;
 			productName = TODOLIST;
-			productReference = FABA66AA22722D0900BF9230 /* TODOLIST.app */;
+			productReference = FABA66AA22722D0900BF9230 /* Utilities.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -133,7 +157,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FABA66A522722D0900BF9230 /* Build configuration list for PBXProject "TODOLIST" */;
+			buildConfigurationList = FABA66A522722D0900BF9230 /* Build configuration list for PBXProject "Utilities" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -146,7 +170,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FABA66A922722D0900BF9230 /* TODOLIST */,
+				FABA66A922722D0900BF9230 /* Utilities */,
 			);
 		};
 /* End PBXProject section */
@@ -326,14 +350,14 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = TODOLIST/Info.plist;
+				INFOPLIST_FILE = Utilities/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.TODOLIST;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Utilities;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "TODOLIST/SWRevealViewController/TODOLIST-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Utilities/SWRevealViewController/Utilities-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -347,14 +371,14 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = TODOLIST/Info.plist;
+				INFOPLIST_FILE = Utilities/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.TODOLIST;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Utilities;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "TODOLIST/SWRevealViewController/TODOLIST-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Utilities/SWRevealViewController/Utilities-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,7 +387,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FABA66A522722D0900BF9230 /* Build configuration list for PBXProject "TODOLIST" */ = {
+		FABA66A522722D0900BF9230 /* Build configuration list for PBXProject "Utilities" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FABA66BA22722D0C00BF9230 /* Debug */,
@@ -372,7 +396,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FABA66BC22722D0C00BF9230 /* Build configuration list for PBXNativeTarget "TODOLIST" */ = {
+		FABA66BC22722D0C00BF9230 /* Build configuration list for PBXNativeTarget "Utilities" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FABA66BD22722D0C00BF9230 /* Debug */,

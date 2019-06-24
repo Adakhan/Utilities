@@ -10,7 +10,6 @@ import UIKit
 
 class TasksTableViewController: UITableViewController{
     
-    @IBOutlet weak var menuButton: UIBarButtonItem!
     
     var currentTitle = ""
     var currentSubtitle = ""
@@ -18,16 +17,25 @@ class TasksTableViewController: UITableViewController{
     let searchController = UISearchController(searchResultsController: nil)
     
     var filteredTasks = [Tasks]()
+    var task: Tasks? = nil
+    
     
     
     @IBAction func pushEditAction(_ sender: Any) {
         tableView.setEditing(!tableView.isEditing, animated: true)
     }
     
-
+    @IBOutlet weak var menuButton: UIBarButtonItem!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadData()
+        initSetUp()
+    }
+    
+    func initSetUp() {
         // Setup the Search Controller
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
@@ -67,15 +75,12 @@ class TasksTableViewController: UITableViewController{
         filteredTasks = todoTasks.filter({( task : Tasks) -> Bool in
             return task.name.lowercased().contains(searchText.lowercased())
         })
-        
         tableView.reloadData()
     }
     
     func isFiltering() -> Bool {
         return searchController.isActive && !searchBarIsEmpty()
     }
-
-    
     
     
     // MARK: - Table view data source
@@ -83,30 +88,25 @@ class TasksTableViewController: UITableViewController{
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         if isFiltering() {
             return filteredTasks.count
         }
-        
         return todoTasks.count
     }
     
-
     override func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
         
-        let task: Tasks
         if isFiltering() {
             task = filteredTasks[indexPath.row]
         } else {
             task = todoTasks[indexPath.row]
         }
         
-        let currentItem = task
-
-        currentTitle = currentItem.name
-        currentSubtitle = currentItem.description
+        currentTitle = (task?.name)!
+        currentSubtitle = (task?.description)!
         performSegue(withIdentifier: "detailSegue", sender: self)
     }
     
@@ -115,20 +115,19 @@ class TasksTableViewController: UITableViewController{
         var cell = tableView.dequeueReusableCell(withIdentifier: "cellIdentifier", for: indexPath)
         cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cellIdentifier")
         cell.accessoryType = .detailDisclosureButton
-
         
-        let task: Tasks
+        
         if isFiltering() {
             task = filteredTasks[indexPath.row]
         } else {
             task = todoTasks[indexPath.row]
         }
         
-        cell.textLabel?.text = (task.name)
-        cell.detailTextLabel?.text = (task.description)
+        cell.textLabel?.text = (task?.name)
+        cell.detailTextLabel?.text = (task?.description)
         
         
-        if (task.completed) == true {
+        if (task!.completed) == true {
             cell.imageView?.image = UIImage(named: "check.png")
         } else {
             cell.imageView?.image = UIImage(named: "uncheck.png")
@@ -137,7 +136,7 @@ class TasksTableViewController: UITableViewController{
         return cell
     }
     
-
+    
     
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -151,6 +150,7 @@ class TasksTableViewController: UITableViewController{
         if editingStyle == .delete {
             // Delete the row from the data source
             removeItem(at: indexPath.row)
+            saveData()
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {}
     }
@@ -175,22 +175,22 @@ class TasksTableViewController: UITableViewController{
         } else {
             tableView.cellForRow(at: indexPath)?.imageView?.image = UIImage(named: "uncheck.png")
         }
+        saveData()
     }
-
+    
     
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-        
         moveItem(fromIndex: fromIndexPath.row, toIndex: to.row )
+        saveData()
         tableView.reloadData()
     }
     
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        let DetailTableViewController = segue.destination as! DetailTableViewController
-        DetailTableViewController.subtitleString = currentSubtitle
-        DetailTableViewController.titleString = currentTitle
+        let detailTableViewController = segue.destination as! DetailTableViewController
+        detailTableViewController.subtitleString = currentSubtitle
+        detailTableViewController.titleString = currentTitle
     }
 }
 

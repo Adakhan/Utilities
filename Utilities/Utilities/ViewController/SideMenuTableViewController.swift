@@ -9,7 +9,7 @@
 import UIKit
 
 class SideMenuTableViewController: UITableViewController {
-
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         NotificationCenter.default.post(name: NSNotification.Name("ToggleSideMenu"), object: nil)
         switch indexPath.row {

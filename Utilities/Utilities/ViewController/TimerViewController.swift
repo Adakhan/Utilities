@@ -13,10 +13,12 @@ class TimerViewController: UIViewController {
     //Labels
     @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet weak var timeScreen: UILabel!
+    
     @IBOutlet weak var startLabel: UIButton!
     @IBOutlet weak var pauseLabel: UIButton!
+    
     @IBOutlet weak var resetLabel: UIButton!
-
+    
     
     //Proporties
     var time = 0
